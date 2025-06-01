@@ -1,1 +1,82 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-color: #3c3c3c;
+  color: whitesmoke;
+}
 
+#gayButton {
+  margin: 12px;
+  height: 50px;
+  width: 120px;
+  border-radius: 10px;
+  background: #333;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444,
+    inset -5px -5px 10px #222;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  color: rgb(161, 161, 161);
+  transition: 500ms;
+}
+
+.top-bar,
+.bottom-bar {
+  background-image: url('code.gif');
+  height: 15px; /* Height of the bar */
+  width: 100%;
+  position: fixed; 
+  left: 0;
+  right: 0;
+}
+
+
+.top-bar {
+  top: 0;
+}
+
+.bottom-bar {
+  bottom: 0;
+}
+
+
+#wrapper { 
+  position: relative;
+  z-index: 2;
+}
+
+
+#background {
+  position: fixed;
+  z-index: 0;
+  background-image: linear-gradient(190deg,
+      rgba(7, 142, 112, 0.5),
+      rgba(38, 207, 170, 0.5),
+      rgba(153, 232, 193, 0.5),
+      rgba(123, 173, 226, 0.5),
+      rgba(79, 72, 203, 0.5),
+      rgba(61, 26, 119, 0.5)),
+    linear-gradient(185deg,
+      rgba(7, 142, 112, 0.5),
+      rgba(38, 207, 170, 0.5),
+      rgba(153, 232, 193, 0.5),
+      rgba(123, 173, 226, 0.5),
+      rgba(79, 72, 203, 0.5),
+      rgba(61, 26, 119, 0.5)),
+    linear-gradient(to bottom,
+      rgb(7, 142, 112),
+      rgb(38, 207, 170),
+      rgb(153, 232, 193),
+      rgb(123, 173, 226),
+      rgb(79, 72, 203),
+      rgb(61, 26, 119));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 128vw;
+  height: 128vh;
+} 
